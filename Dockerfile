@@ -11,8 +11,6 @@ COPY package.json ./
 COPY package-lock.json ./
 RUN npm install 
 
-echo "nodejs"
-
 # add app
 COPY . ./
 
