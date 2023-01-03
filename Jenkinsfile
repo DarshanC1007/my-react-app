@@ -10,7 +10,7 @@ pipeline {
         stages {
             stage ('git clone from repo'){
             steps{
-                    git branch: 'main', credentialsId: 'GIT_HUB_CREDENTIALS', url: 'https://github.com/DarshanC1007/my-react-app.git'
+                   git branch: 'main', credentialsId: 'GIT_HUB_CREDENTIALS', url: 'https://github.com/DarshanC1007/my-react-app.git'
                 }
             }
             stage ('Build Docker Image') {
