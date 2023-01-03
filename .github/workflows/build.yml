@@ -4,15 +4,15 @@ jobs:
   build-node:
     name: Build Node
     runs-on: ubuntu-latest
-    container: node:16
+    conatiner: node:16
     steps:
       - run: node --version
         name: check node version
-      - run: npm --version
+      - run: npm --version  
         name: check NPM version
       - uses: actions/checkout@v2
         name: checkout code
       - run: npm install
         name: install npm packages
       - run: node my-react-app.js
-        name: run application
+        name: run application 
