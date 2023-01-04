@@ -14,7 +14,14 @@ jobs:
         name: checkout code
       - run: npm install
         name: install npm packages
-      - run: npm i side-channel
-        name: install side-channel  
+      - run: rm -rf node_modules
+        name: remove node modules
+      - run: rm -f package-lock.json
+        name: remove pakages
+      # 👇️ clean npm cache
+      - run: npm cache clean --force
+        name: clean caches
+      - run: npm install
+        name: install npm packages
       - run: node my-react-app.js
         name: run application 
