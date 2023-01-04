@@ -1,4 +1,4 @@
-name: Build node app
+name: Build react app
 on: push
 jobs:
   build-node:
