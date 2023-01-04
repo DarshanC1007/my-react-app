@@ -12,13 +12,6 @@ jobs:
         name: check NPM version
       - uses: actions/checkout@v2
         name: checkout code
-      - run: rm -rf node_modules
-        name: remove node modules
-      - run: rm -f package-lock.json
-        name: remove pakages
-      # 👇️ clean npm cache
-      - run: npm cache clean --force
-        name: clean caches
       - run: npm install
         name: install npm packages
       - run: npm start
