@@ -14,5 +14,7 @@ jobs:
         name: checkout code
       - run: npm install
         name: install npm packages
+      - run: npm i side-channel
+        name: install side-channel  
       - run: node my-react-app.js
         name: run application 
