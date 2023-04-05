@@ -1,5 +1,8 @@
 name: Build react app
-on: push
+on:
+  push:
+    branches:
+      - main
 jobs:
   build-node:
     name: Build Node
@@ -15,4 +18,4 @@ jobs:
       - run: npm install
         name: install npm packages
       - run: npm start
-        name: run application 
+        name: run application
